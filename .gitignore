@@ -1,5 +1,10 @@
 # Ignore paths that contain user-generated content.
+# We're going to track uploaded files in GitHub, even though its not a good idea to track binary files.
+# So we have everything in one place required to rebuild the site as of that commit.  The repository
+# will be larger than it should be.
 docroot/files
-docroot/sites/*/files
+#docroot/sites/*/files
 docroot/sites/*/private
 acquia-files
+# Ignore the symlink directory on Windows
+docroot/sites/magnifascent.dd/*
